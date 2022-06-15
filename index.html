@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilos.css"> <!--link:css aplicar a todos los html-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Zilla+Slab:ital@1&display=swap" rel="stylesheet">
@@ -35,7 +36,7 @@
             <article>
                 <img class="estiloImg" src="./img/producto1(tecladoGamer).jpg" alt="teclado">
                 <h3 class="alineaTitulo"> Teclado Gamer </h3>
-                <p class="descripProduc">El NKB-560 es un Teclado Gamer compacto de Alta Calidad.
+                <p class="descripProduc"  data-aos="zoom-in">El NKB-560 es un Teclado Gamer compacto de Alta Calidad.
                     Construído con Sistema de Doble Inyección y Ultra-Silencioso.
                     La elevación de sus teclas brindan comodidad y una gran suavidad al tacto.
                     Posee 12 Teclas Multimedia que funcionan presionando FN.
@@ -45,9 +46,9 @@
             </article>
 
             <article>
-                <img class="estiloImg" src="./img/producto2(auricular).jpg" alt="auricular">
+                <img class="estiloImg" src="./img/producto2(auricular).jpg " alt="auricular">
                 <h3 class="alineaTitulo"> Auricular </h3>
-                <p class="descripProduc">Mundo Techno te presenta VANGUARD, Auriculares 7.1 Virtual Channel que te permitirán disfrutar de tus juegos en PC, Consolas     Smartphones.
+                <p class="descripProduc" data-aos="zoom-in">Mundo Techno te presenta VANGUARD, Auriculares 7.1 Virtual Channel que te permitirán disfrutar de tus juegos en PC, Consolas     Smartphones.
                     Posee cable con Conector TRRS (Audio/Mic.) y Conector USB 2.0 para RED LEDS laterales apto para conectalo a Consolas.
                     Pero además incluye un Cable Adaptador para conectarlo a PC, lo que permite una "Conexión Dual".
                     También posee Micrófono Omnidireccional flexible que te permitirá dominar en Multiplayer.
@@ -57,7 +58,7 @@
             <article>
                 <img class="estiloImg" src="./img/producto3(sillaGamer).jpg" alt="sillaGamer">
                 <h3 class="alineaTitulo"> Silla Gamer </h3>
-                <p class="descripProduc"> TYPHON RT es una Silla Gamer de una ergonomía absoluta, efectiva articulación y excelente confort.
+                <p class="descripProduc"  data-aos="zoom-in"> TYPHON RT es una Silla Gamer de una ergonomía absoluta, efectiva articulación y excelente confort.
                     Posee estructura metálica lo que la convierte en una silla muy resistente.
                     Nuevo modelo que incluye apoyapies ajustable.
                     Disponible en 2 colores: Azul con Blanco y Negro con Rojo.
@@ -68,7 +69,7 @@
             <article>
                 <img class="estiloImg" src="./img/producto4(mouseGamer).jpg" alt="mouse">
             <h3 class="alineaTitulo"> Mouse Inalámbrico </h3>
-            <p class="descripProduc"> Mouse Inalámbrico con diseño de última generación, ergonómico y confortable.
+            <p class="descripProduc"  data-aos="zoom-in"> Mouse Inalámbrico con diseño de última generación, ergonómico y confortable.
                 Excelente adaptabilidad a la mano. Perfecto para muchas horas de uso.
                 Tecnología que asegura un óptimo desplazamiento con alto nivel de control y precisión.
                 Para PC, Notebook y Tablets.
@@ -80,7 +81,7 @@
         
         
         <footer class="footerConten">
-                    <h3>Seguinos en </h3>
+                    <h3 class="colortitulo">Seguinos en </h3>
                     <div>
                         <a href="https://z-p15.www.instagram.com/accounts/login/?next=/p/CK8SOUgBxgo/&hl=es-la">
                             <img class = "logo" src="./img/logo_instagram.png" >
@@ -94,8 +95,9 @@
                     </div>
                 
                     <div>
-                        <h3> Navegacion </h3>
+                        
                         <ul>
+                            <h3 class="colortitulo"> Navegacion </h3>
                             <li><a href = "index.html">Inicio </a></li>
                             <li><a href = "./secciones/productos.html">Productos </a></li>
                             <li><a href = "./secciones/ofertas.html">Ofertas </a></li>
@@ -103,5 +105,10 @@
                         </ul>
                     </div>
         </footer>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
 </body>
 </html>
