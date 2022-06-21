@@ -27,7 +27,9 @@ header, footer{
 ul li{
     align-items: center;
 }
-
+h3 ul li{
+    align-items: center;
+}
 li {
     list-style-type: none;
 }
@@ -68,7 +70,6 @@ nav ul :hover{
 .styleButtom{
     width: 50%;
     padding: 20px 30px 20px 30px;
-    border: 10px solid black;
     text-align: center;
     margin-left: 30px;
     margin-right: 30px;
@@ -83,6 +84,17 @@ nav ul :hover{
 .divBottom{
     margin-bottom:50px;
 }
+
+.tituloFormularioH1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    padding: 20px 30px 20px 30px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
 .colortitulo{
     color: #676582;
 }
@@ -103,6 +115,9 @@ aside {
 }
 .sectionContenContacto{
     grid-area: Contacto;
+}
+.sectionContenCompras{
+    grid-area: Compras;
 }
 footer{
     grid-area: PieDePagina;
@@ -144,6 +159,18 @@ footer{
     "PieDePagina";
 }
 
+.divContenCompras{
+    background-color: black;
+    justify-content: center;
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+    "Encabezado"
+    "Aside"
+    "Compras"
+    "PieDePagina";
+}
+
 .estiloAside{
     padding: 20px 30px 20px 30px;
     color: black;
@@ -172,6 +199,14 @@ footer{
 }
 
 .sectionColumnasContacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    gap: 15px;
+    background-color: #676582;
+}
+.sectionColumnasCompras{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -328,6 +363,68 @@ footer{
             height: 400 px;
             border: 5px solid #fedc3d;
             margin: 1.3em;
+        }
+    }
+    
+       /*compras*/
+       @media (min-width:600px){ 
+        .divContenCompras{
+            margin:0;
+            grid-template-areas:
+            "Encabezado"
+            "Aside"
+            "Compras"
+            "PieDePagina";
+        }
+        nav ul{
+            display: flex;
+            justify-content: space-between;
+        }
+        .logo{
+            width: 32px;
+            height: 32px;
+        }
+    } 
+       
+   @media (min-width:768px){
+        .divContenCompras{
+            margin: 0;
+            grid-template-columns: 2fr 2fr ;
+            grid-template-areas:
+            "Encabezado Encabezado"
+            "Aside Aside"
+            "Compras Compras"
+            "PieDePagina PieDePagina"
+            ;
+        }
+        .sectionContenCompras{
+            background-color: black;
+        }
+        .sectionColumnasCompras{
+            background-color: #676582;
+            display: grid;
+            grid-template-columns: 2fr;
+            gap: 5px;
+            margin: 3em;
+            }
+
+        .logo{
+            width: 33px;
+            height: 33px;
+        }
+    }
+
+     @media (min-width:1024px){
+        .sectionContenCompras{
+            background-color: black;
+        }
+        .sectionColumnasCompras{
+            grid-template-columns: 2fr;
+            background-color: #676582;
+        }
+        .logo{
+            width: 35px;
+            height: 35px;
         }
     }
 
