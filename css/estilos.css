@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Zilla+Slab:ital@1&display=swap');
 
-*{
-padding: 0;
-margin: 0;
+* {
+    padding: 0;
+    margin: 0;
 }
 
-body{
-    text-align:center;
+body {
+    text-align: center;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -16,19 +16,21 @@ body{
     align-items: stretch;
 }
 
-header, footer{
+header,
+footer {
     background-color: black;
-    padding: 50px ;
+    padding: 50px;
     position: relative;
     display: grid;
     justify-content: center;
 }
 
-ol, ul {
+ol,
+ul {
     padding-left: 0px;
 }
 
-ul li{
+ul li {
     align-items: center;
 }
 
@@ -36,22 +38,28 @@ li {
     list-style-type: none;
 }
 
-header, div, a{
+header,
+div,
+a {
     text-decoration: none;
 }
 
-nav , ul , li, a {
+nav,
+ul,
+li,
+a {
     color: #676582;
 }
 
-nav ul{
+nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-nav ul :hover{
+
+nav ul :hover {
     transform: scale(1.30);
-    color:#fedc3d;
+    color: #fedc3d;
 }
 
 .estiloImg {
@@ -62,30 +70,33 @@ nav ul :hover{
     margin: 1.3em;
 }
 
-.logo{
+.logo {
     width: 35px;
     height: 35px;
 }
 
-.descripProduc{
+.descripProduc {
     margin: 20px;
 }
-.styleButtom{
+
+.styleButtom {
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
 
-.alineaTitulo{
+.alineaTitulo {
     text-align: center;
 }
-.divTop{
-    margin-top:50px;
-   }
-.divBottom{
-    margin-bottom:50px;
+
+.divTop {
+    margin-top: 50px;
 }
 
-.tituloFormularioH1{
+.divBottom {
+    margin-bottom: 50px;
+}
+
+.tituloFormularioH1 {
     font-family: 'Roboto', sans-serif;
     font-size: 35px;
     padding: 20px 30px 20px 30px;
@@ -95,86 +106,96 @@ nav ul :hover{
     margin-left: 40px;
 }
 
-.colortitulo{
+.colortitulo {
     color: #676582;
 }
-.fondoVioleta{
- background-color: #676582;
+
+.fondoVioleta {
+    background-color: #676582;
 }
+
 /*declaracion del area de las grillas */
 
 header {
     grid-area: Encabezado;
 }
+
 aside {
     grid-area: Aside;
 }
-.sectionConten{
+
+.sectionConten {
     grid-area: Productos;
 }
-.sectionContenOfertas{
+
+.sectionContenOfertas {
     grid-area: ProductosOfertas;
 }
-.sectionContenContacto{
+
+.sectionContenContacto {
     grid-area: Contacto;
 }
-.sectionContenCompras{
+
+.sectionContenCompras {
     grid-area: Compras;
 }
-footer{
+
+footer {
     grid-area: PieDePagina;
 }
 
 
 /*Acomodo areas*/
 
-.divConten{
+.divConten {
     background-color: black;
     justify-content: center;
     display: grid;
     gap: 5px;
     grid-template-areas:
-    "Encabezado"
-    "Aside"
-    "Productos"
-    "PieDePagina";
-}
-.divContenOfertas{
-    background-color: black;
-    justify-content: center;
-    display: grid;
-    gap: 5px;
-    grid-template-areas:
-    "Encabezado"
-    "Aside"
-    "ProductosOfertas"
-    "PieDePagina";
-}
-.divContenContacto{
-    background-color: black;
-    justify-content: center;
-    display: grid;
-    gap: 5px;
-    grid-template-areas:
-    "Encabezado"
-    "Aside"
-    "Contacto"
-    "PieDePagina";
+        "Encabezado"
+        "Aside"
+        "Productos"
+        "PieDePagina";
 }
 
-.divContenCompras{
+.divContenOfertas {
     background-color: black;
     justify-content: center;
     display: grid;
     gap: 5px;
     grid-template-areas:
-    "Encabezado"
-    "Aside"
-    "Compras"
-    "PieDePagina";
+        "Encabezado"
+        "Aside"
+        "ProductosOfertas"
+        "PieDePagina";
 }
 
-.estiloAside{
+.divContenContacto {
+    background-color: black;
+    justify-content: center;
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+        "Encabezado"
+        "Aside"
+        "Contacto"
+        "PieDePagina";
+}
+
+.divContenCompras {
+    background-color: black;
+    justify-content: center;
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+        "Encabezado"
+        "Aside"
+        "Compras"
+        "PieDePagina";
+}
+
+.estiloAside {
     padding: 20px 30px 20px 30px;
     color: black;
     margin-top: 25px;
@@ -183,7 +204,7 @@ footer{
     margin-left: 30px;
 }
 
-.sectionColumnas{
+.sectionColumnas {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -192,7 +213,7 @@ footer{
     background-color: #676582;
 }
 
-.sectionColumnasOfertas{
+.sectionColumnasOfertas {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -201,15 +222,7 @@ footer{
     background-color: #676582;
 }
 
-.sectionColumnasContacto{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    justify-items: center;
-    gap: 15px;
-    background-color: #676582;
-}
-.sectionColumnasCompras{
+.sectionColumnasContacto {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -218,277 +231,315 @@ footer{
     background-color: #676582;
 }
 
- /*inicio*/
-@media (min-width:600px){
-        .divConten{
-            margin:0;
-            grid-template-areas:
+.sectionColumnasCompras {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    gap: 15px;
+    background-color: #676582;
+}
+
+/*inicio*/
+@media (min-width:600px) {
+    .divConten {
+        margin: 0;
+        grid-template-areas:
             "Encabezado"
             "Aside"
             "Productos"
             "PieDePagina";
-        }
-        nav ul{
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .estiloImg {
-            width: 250 px;
-            height: 250 px;
-            border: 5px solid #fedc3d;
-            margin: 1.3em;
-        }
-        
-        .logo{
-             width: 50px;
-            height: 50px;
-        }
-        .descripProduc{
-            margin-bottom: 20px;
-            margin-right: 20px;
-            margin-left: 20px;
-        }
-
     }
-       
-    @media (min-width:768px){
-        .divConten{
-            margin: 0;
-            grid-template-columns: 2fr 2fr ;
-            grid-template-areas:
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .estiloImg {
+        width: 250 px;
+        height: 250 px;
+        border: 5px solid #fedc3d;
+        margin: 1.3em;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .descripProduc {
+        margin-bottom: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+}
+
+@media (min-width:768px) {
+    .divConten {
+        margin: 0;
+        grid-template-columns: 2fr 2fr;
+        grid-template-areas:
             "Encabezado Encabezado"
             "Aside Aside"
             "Productos Productos"
             "PieDePagina PieDePagina"
-            ;
-        }
-        .sectionConten{
-            background-color: black;
-        }
-        .sectionColumnas{
-            background-color: #676582;
-            display:grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 5px;
-            margin: 3em;
-        }
-        .estiloImg {
-            width: 350 px;
-            height: 350 px;
-            border: 5px solid #fedc3d;
-            margin: 1.3em;
-        }
+        ;
     }
-    @media (min-width:1024px){
-        .sectionConten{
-            background-color: black;
-        }
-        .sectionColumnas{
-            grid-template-columns: 2fr 2fr 2fr;
-        }
-        .estiloImg {
-            width: 400 px;
-            height: 400 px;
-            border: 5px solid #fedc3d;
-            margin: 1.3em;
-        }
+
+    .sectionConten {
+        background-color: black;
     }
-    /*ofertas*/
-      @media (min-width:600px){
-        .divContenOfertas{
-            margin:0;
-            grid-template-areas:
+
+    .sectionColumnas {
+        background-color: #676582;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+        margin: 3em;
+    }
+
+    .estiloImg {
+        width: 350 px;
+        height: 350 px;
+        border: 5px solid #fedc3d;
+        margin: 1.3em;
+    }
+}
+
+@media (min-width:1024px) {
+    .sectionConten {
+        background-color: black;
+    }
+
+    .sectionColumnas {
+        grid-template-columns: 2fr 2fr 2fr;
+    }
+
+    .estiloImg {
+        width: 400 px;
+        height: 400 px;
+        border: 5px solid #fedc3d;
+        margin: 1.3em;
+    }
+}
+
+/*ofertas*/
+@media (min-width:600px) {
+    .divContenOfertas {
+        margin: 0;
+        grid-template-areas:
             "Encabezado"
             "Aside"
             "ProductosOfertas"
             "PieDePagina";
-        }
-        nav ul{
-            display: flex;
-            justify-content: space-between;
-        }
-        .estiloImg {
-            width: 250 px;
-            height: 250 px;
-            border: 5px solid #fedc3d;
-            margin: 1.3em;
-        }
-        .logo{
-            width: 50px;
-            height: 50px;
-        }
-        .descripProduc{
-            margin-bottom: 20px;
-            margin-right: 20px;
-            margin-left: 20px;
-        }
-        }
-       
-    @media (min-width:768px){
-        .divContenOfertas{
-            margin: 0;
-            grid-template-columns: 2fr 2fr ;
-            grid-template-areas:
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .estiloImg {
+        width: 250 px;
+        height: 250 px;
+        border: 5px solid #fedc3d;
+        margin: 1.3em;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .descripProduc {
+        margin-bottom: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+@media (min-width:768px) {
+    .divContenOfertas {
+        margin: 0;
+        grid-template-columns: 2fr 2fr;
+        grid-template-areas:
             "Encabezado Encabezado"
             "Aside Aside"
             "ProductosOfertas ProductosOfertas"
             "PieDePagina PieDePagina"
-            ;
-        }
-        .sectionContenOfertas{
-            background-color: black;
-        }
-        .sectionColumnasOfertas{
-            background-color: #676582;
-            display: grid;
-            grid-template-columns: 2fr 2fr;
-            gap: 5px;
-            margin: 3em;
-        }
-        
-        .estiloImg {
-            width: 350 px;
-            height: 350 px;
-            border: 5px solid #fedc3d;
-            margin: 1.3em;
-        }
+        ;
     }
 
-     @media (min-width:1024px){
-        .sectionContenOfertas{
-            background-color: black;
-        }
-        .sectionColumnasOfertas{
-            grid-template-columns: 2fr 2fr;
-        }
-        .estiloImg {
-            width: 400 px;
-            height: 400 px;
-            border: 5px solid #fedc3d;
-            margin: 1.3em;
-        }
+    .sectionContenOfertas {
+        background-color: black;
     }
-    
-       /*compras*/
-       @media (min-width:600px){ 
-        .divContenCompras{
-            margin:0;
-            grid-template-areas:
+
+    .sectionColumnasOfertas {
+        background-color: #676582;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap: 5px;
+        margin: 3em;
+    }
+
+    .estiloImg {
+        width: 350 px;
+        height: 350 px;
+        border: 5px solid #fedc3d;
+        margin: 1.3em;
+    }
+}
+
+@media (min-width:1024px) {
+    .sectionContenOfertas {
+        background-color: black;
+    }
+
+    .sectionColumnasOfertas {
+        grid-template-columns: 2fr 2fr;
+    }
+
+    .estiloImg {
+        width: 400 px;
+        height: 400 px;
+        border: 5px solid #fedc3d;
+        margin: 1.3em;
+    }
+}
+
+/*compras*/
+@media (min-width:600px) {
+    .divContenCompras {
+        margin: 0;
+        grid-template-areas:
             "Encabezado"
             "Aside"
             "Compras"
             "PieDePagina";
-        }
-        nav ul{
-            display: flex;
-            justify-content: space-between;
-        }
-        .logo{
-            width: 32px;
-            height: 32px;
-        }
-    } 
-       
-   @media (min-width:768px){
-        .divContenCompras{
-            margin: 0;
-            grid-template-columns: 2fr 2fr ;
-            grid-template-areas:
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media (min-width:768px) {
+    .divContenCompras {
+        margin: 0;
+        grid-template-columns: 2fr 2fr;
+        grid-template-areas:
             "Encabezado Encabezado"
             "Aside Aside"
             "Compras Compras"
             "PieDePagina PieDePagina"
-            ;
-        }
-        .sectionContenCompras{
-            background-color: black;
-        }
-        .sectionColumnasCompras{
-            background-color: #676582;
-            display: grid;
-            grid-template-columns: 2fr;
-            gap: 5px;
-            margin: 3em;
-            }
-
-        .logo{
-            width: 33px;
-            height: 33px;
-        }
+        ;
     }
 
-     @media (min-width:1024px){
-        .sectionContenCompras{
-            background-color: black;
-        }
-        .sectionColumnasCompras{
-            grid-template-columns: 2fr;
-            background-color: #676582;
-        }
-        .logo{
-            width: 35px;
-            height: 35px;
-        }
+    .sectionContenCompras {
+        background-color: black;
     }
 
-      /*contacto*/
-       @media (min-width:600px){
-        .divContenContacto{
-            margin:0;
-            grid-template-areas:
+    .sectionColumnasCompras {
+        background-color: #676582;
+        display: grid;
+        grid-template-columns: 2fr;
+        gap: 5px;
+        margin: 3em;
+    }
+
+    .logo {
+        width: 33px;
+        height: 33px;
+    }
+}
+
+@media (min-width:1024px) {
+    .sectionContenCompras {
+        background-color: black;
+    }
+
+    .sectionColumnasCompras {
+        grid-template-columns: 2fr;
+        background-color: #676582;
+    }
+
+    .logo {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/*contacto*/
+@media (min-width:600px) {
+    .divContenContacto {
+        margin: 0;
+        grid-template-areas:
             "Encabezado"
             "Aside"
             "Contacto"
             "PieDePagina";
-        }
-        nav ul{
-            display: flex;
-            justify-content: space-between;
-        }
-        .logo{
-            width: 32px;
-            height: 32px;
-        }
-    } 
-       
-   @media (min-width:768px){
-        .divContenContacto{
-            margin: 0;
-            grid-template-columns: 2fr 2fr ;
-            grid-template-areas:
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media (min-width:768px) {
+    .divContenContacto {
+        margin: 0;
+        grid-template-columns: 2fr 2fr;
+        grid-template-areas:
             "Encabezado Encabezado"
             "Aside Aside"
             "Contacto Contacto"
             "PieDePagina PieDePagina"
-            ;
-        }
-        .sectionContenContacto{
-            background-color: black;
-        }
-        .sectionColumnasContacto{
-            background-color: #676582;
-            display: grid;
-            grid-template-columns: 2fr;
-            gap: 5px;
-            margin: 3em;
-            }
-
-        .logo{
-            width: 33px;
-            height: 33px;
-        }
+        ;
     }
 
-     @media (min-width:1024px){
-        .sectionContenContacto{
-            background-color: black;
-        }
-        .sectionColumnasContacto{
-            grid-template-columns: 2fr;
-        }
-        .logo{
-            width: 35px;
-            height: 35px;
-        }
+    .sectionContenContacto {
+        background-color: black;
     }
+
+    .sectionColumnasContacto {
+        background-color: #676582;
+        display: grid;
+        grid-template-columns: 2fr;
+        gap: 5px;
+        margin: 3em;
+    }
+
+    .logo {
+        width: 33px;
+        height: 33px;
+    }
+}
+
+@media (min-width:1024px) {
+    .sectionContenContacto {
+        background-color: black;
+    }
+
+    .sectionColumnasContacto {
+        grid-template-columns: 2fr;
+    }
+
+    .logo {
+        width: 35px;
+        height: 35px;
+    }
+}
