@@ -51,6 +51,7 @@ nav ul{
 }
 nav ul :hover{
     transform: scale(1.30);
+    color:#fedc3d;
 }
 
 .estiloImg {
@@ -97,7 +98,9 @@ nav ul :hover{
 .colortitulo{
     color: #676582;
 }
-
+.fondoVioleta{
+ background-color: #676582;
+}
 /*declaracion del area de las grillas */
 
 header {
