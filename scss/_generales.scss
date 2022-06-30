@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Zilla+Slab:ital@1&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    color: $negro;
+    background-color: $amarillo;
+    align-items: stretch;
+
+}.estiloImg {
+    width: 300 px;
+    height: 300 px;
+    text-align: center;
+    border: 5px solid $amarillo;
+    margin: 1.3em;
+}
+
+.logo {
+    width: 35px;
+    height: 35px;
+}
+
+.descripProduc {
+    margin: 20px;
+}
+
+.styleButtom {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.alineaTitulo {
+    text-align: center;
+}
+
+.divTop {
+    margin-top: 50px;
+}
+
+.divBottom {
+    margin-bottom: 50px;
+}
+
+.colortitulo {
+    color: $violeta;
+}
+
+.fondoVioleta {
+    background-color: $violeta;
+}

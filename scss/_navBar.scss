@@ -1,0 +1,43 @@
+header,
+footer {
+    background-color: $negro;
+    padding: 50px;
+    position: relative;
+    display: grid;
+    justify-content: center;
+}
+
+header,
+nav,
+ul,
+li{
+    list-style-type: none;
+    align-items: center;
+}
+
+header,
+nav,
+ul,
+li,
+a {
+    color: $violeta;
+    text-decoration: none;
+}
+
+        ol,
+        ul {
+            padding-left: 0px;
+        }
+
+        nav{
+            ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            & :hover {
+                transform: scale(1.30);
+                color: $amarillo;
+            }
+        }
+        }
+        
