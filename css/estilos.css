@@ -519,3 +519,16 @@ footer {
     height: 35px;
   }
 }
+
+.btn--teclado {
+  background-color: #fedc3d;
+}
+.btn--auricular {
+  background-color: #676582;
+}
+.btn--silla {
+  background-color: #000000;
+}
+.btn--mouse {
+  background-color: #b2a05f;
+}

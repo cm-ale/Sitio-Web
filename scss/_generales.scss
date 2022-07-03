@@ -1,3 +1,4 @@
+@import "variable";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Zilla+Slab:ital@1&display=swap');
 * {
     padding: 0;
@@ -12,8 +13,8 @@ body {
     color: $negro;
     background-color: $amarillo;
     align-items: stretch;
-
-}.estiloImg {
+}
+.estiloImg {
     width: 300 px;
     height: 300 px;
     text-align: center;
@@ -53,4 +54,22 @@ body {
 
 .fondoVioleta {
     background-color: $violeta;
+}
+//maps para los botones de inicio
+$productos:(
+    teclado: $amarillo,
+    auricular: $violeta,
+    silla: $negro,
+    mouse: $marron,
+);
+@each $produc, $color in $productos{
+    .btn--#{$produc}{
+        background-color: $color;
+    }
+}
+
+//extends para las redes sociales del footer
+
+.redSocial{
+    border:2px $amarillo solid;
 }
