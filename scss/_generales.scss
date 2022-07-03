@@ -26,6 +26,14 @@ body {
     width: 35px;
     height: 35px;
 }
+.redsocial--instagram{
+    width: 35px;
+    height: 35px;
+}
+.redsocial--facebook{
+    width: 35px;
+    height: 35px;
+}
 
 .descripProduc {
     margin: 20px;
@@ -48,7 +56,7 @@ body {
     margin-bottom: 50px;
 }
 
-.colortitulo {
+.footerTitulo {
     color: $violeta;
 }
 
@@ -71,5 +79,18 @@ $productos:(
 //extends para las redes sociales del footer
 
 .redSocial{
-    border:2px $amarillo solid;
+    border: 2px solid;
 }
+
+.redsocial--instagram{
+   @extend .redSocial;
+   color: $amarillo;
+}
+
+.redsocial--facebook{
+    @extend .redSocial;
+    color: $violeta
+ }
+
+ //mixin para los titulos del footer
+ 
