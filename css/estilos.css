@@ -75,6 +75,9 @@ body {
 .redsocial--facebook {
   color: #676582; }
 
+.footerTitulo {
+  text-transform: uppercase; }
+
 header,
 footer {
   background-color: #000000;
