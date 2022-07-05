@@ -56,48 +56,10 @@ body {
     margin-bottom: 50px;
 }
 
-.footerTitulo{
+.colortitulo{
     color: $violeta;
 }
 
 .fondoVioleta {
     background-color: $violeta;
 }
-//maps para los botones de inicio
-$productos:(
-    teclado: $amarillo,
-    auricular: $violeta,
-    silla: $negro,
-    mouse: $marron,
-);
-@each $produc, $color in $productos{
-    .btn--#{$produc}{
-        background-color: $color;
-    }
-}
-
-//extends para las redes sociales del footer
-
-.redSocial{
-    border: 2px solid;
-}
-
-.redsocial--instagram{
-   @extend .redSocial;
-   color: $amarillo;
-}
-
-.redsocial--facebook{
-    @extend .redSocial;
-    color: $violeta;
- }
-
- //mixin para los titulos del footer
- 
- @mixin tamaño($text){
-    text-transform: $text;
- }
-
- .footerTitulo{
-     @include tamaño(uppercase);
- }
